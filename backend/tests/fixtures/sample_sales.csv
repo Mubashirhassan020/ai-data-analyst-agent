@@ -1,0 +1,11 @@
+order_id,region,product,revenue,units,order_date
+1001,West,Widget A,120.50,3,2025-01-05
+1002,East,Widget B,89.99,1,2025-01-06
+1003,West,Widget A,241.00,6,2025-01-07
+1004,South,Widget C,15.25,1,2025-01-08
+1005,East,Widget B,89.99,1,2025-01-09
+1006,North,Widget A,40.17,1,2025-01-10
+1007,West,Widget C,,2,2025-01-11
+1008,South,Widget A,120.50,3,2025-01-12
+1009,East,Widget A,120.50,3,2025-01-13
+1010,North,Widget B,179.98,2,2025-01-14

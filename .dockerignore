@@ -1,0 +1,36 @@
+# Python
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/htmlcov/
+**/.coverage
+
+# Node
+**/node_modules/
+**/dist/
+**/.vite/
+
+# Env / secrets
+.env
+.env.local
+**/.env.local
+
+# Data (never bake sample uploads into an image)
+data/uploads/*
+data/processed/*
+backend/.smoke*/
+
+# Git / editor / OS
+.git/
+.github/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Docs (not needed inside the image)
+docs/
+*.md

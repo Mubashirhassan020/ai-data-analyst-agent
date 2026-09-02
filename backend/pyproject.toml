@@ -1,0 +1,22 @@
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "SIM"]
+ignore = [
+  "E501",
+  "B008",  # FastAPI's `File(...)`/`Depends(...)` default-arg pattern is required, not a bug
+  "N806",  # X/X_train/y are the standard scikit-learn convention (app/ml/*), not accidental
+  "SIM108",  # if/else is clearer than a ternary once either branch is a non-trivial call
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-ra --strict-markers"
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+ignore_missing_imports = true
