@@ -16,6 +16,7 @@ dist/
 .vite/
 *.log
 npm-debug.log*
+*.tsbuildinfo
 
 # Env / secrets
 .env
